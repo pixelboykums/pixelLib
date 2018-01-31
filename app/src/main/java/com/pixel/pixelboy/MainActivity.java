@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Random r = new Random();
 
         for (int i = 0; i < 15; i++) {
-            numbers.add(r.nextInt(7)+1);
+            numbers.add(r.nextInt(7) + 1);
         }
 
         double mean = CentralTendency.arithmeticMean(numbers).doubleValue();
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         String res = String.format("Numbers:\n\n%s\nMean: %.1f\nMedian: %.1f\nMode: %s\n",
                 numbers, mean, median, mode);
 
-        TextView textView = (TextView)findViewById(R.id.text_view_result);
+        TextView textView = (TextView) findViewById(R.id.text_view_result);
         textView.setText(res);
     }
 }
